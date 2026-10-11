@@ -1,0 +1,43 @@
+{
+    "project_name": "BankSense AI",
+    "task": "Bank Marketing Subscription Prediction",
+    "model_name": "Random Forest Classifier",
+    "target": "Subscribed_Term_Deposit",
+    "positive_class": 1,
+    "decision_threshold": 0.59,
+    "input_features": [
+        "age",
+        "job",
+        "marital",
+        "education",
+        "default",
+        "balance",
+        "housing",
+        "loan",
+        "contact",
+        "day",
+        "month",
+        "campaign",
+        "pdays",
+        "previous",
+        "poutcome",
+        "Previously_Contacted"
+    ],
+    "excluded_features": [
+        "Id",
+        "duration"
+    ],
+    "test_metrics": {
+        "Accuracy": 0.8751520513104059,
+        "Precision": 0.467697907188353,
+        "Recall": 0.48582230623818523,
+        "F1-Score": 0.4765878535002318,
+        "ROC-AUC": 0.7979361113051053,
+        "PR-AUC (AP)": 0.44415746017165625
+    },
+    "training_configuration": {
+        "validation_threshold_optimization": true,
+        "random_state": 42
+    },
+    "created_at_utc": "2026-10-11T07:09:47.104008+00:00"
+}
